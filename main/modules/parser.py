@@ -72,9 +72,6 @@ async def auto_parser():
                 queue.append(i["data"])    
                 print("Saved ", i["name"])   
 
-        try:
-            await update_schedulex()
-        except:
-            pass
+
 
         await asyncio.sleep(30)
